@@ -1,0 +1,61 @@
+
+<div class="row">
+    <div class="col-6">
+        <form action="">
+            <div class="mb-3">
+                <label for="name" class="form-label">@ViewBag.Info</label>
+                <input type="text" name="name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="year" class="form-label">@ViewBag.Test</label>
+                <input type="year" name="year" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="country">@ViewBag.Lat</label>
+                <select name="country" id="country" class="form-select">
+                    <option value="Uzbek">O'zbekiston</option>
+                    <option selected value="USA">AQSH</option>
+                    <option value="Rassia">Rossiya</option>
+                    <option value="UK">Angliya</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-outline-danger">Добавить</button>
+        </form>
+    </div>
+    <div class="col-2">
+
+    </div>
+    <div class="col-3">
+        <img src="~/images/sammer.jpg" alt="test" width="300px" height="200px">
+    </div>
+ 
+</div>
+
+   
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="~/images/sammer.jpg" class="d-block w-100" alt="test">
+    </div>
+    <div class="carousel-item">
+      <img src="~/images/ocean.jpg" class="d-block w-100" alt="test">
+    </div>
+    <div class="carousel-item">
+      <img src="~/images/home.jpg" class="d-block w-100" alt="test">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+   
