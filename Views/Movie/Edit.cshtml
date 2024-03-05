@@ -1,0 +1,55 @@
+@model Movie
+
+
+<div class="row">
+    <div class="col-8">
+        <form asp-controller="Movie" asp-action="Update" asp-route-id="@Model.Id" method="post">
+            <div class="mb-3">
+                <label for="Name" class="form-label">Kino nomi:</label>
+                <input type="text" name="Name" class="form-control" value="@Model.Name">
+            </div>
+            <div class="mb-3">
+                <label for="Year" class="form-label">Nechinchi yil:</label>
+                <input type="year" name="Year" class="form-control" value="@Model.Year">
+            </div>
+            <div class="mb-3">
+                <label for="Country">Davlat:</label>
+                <select name="Country" id="Country" class="form-select">
+                    @if(Model.Country== "Uzbek")
+                    {
+                        <option selected value="Uzbek">O'zbekiston</option>
+                    }
+                    else
+                    {
+                        <option value="Uzbek">O'zbekiston</option>
+                    }
+                    @if(Model.Country== "USA")
+                    {
+                        <option selected value="USA">AQSH</option>
+                    }
+                    else
+                    {
+                        <option value="USA">AQSH</option>
+                    }
+                    @if(Model.Country== "Rassia")
+                    {
+                        <option selected value="Rassia">Rossiya</option>
+                    }
+                    else
+                    {
+                        <option value="Rassia">Rossiya</option>
+                    }
+                    @if(Model.Country== "UK")
+                    {
+                        <option selected value="UK">Angliya</option>
+                    }
+                    else
+                    {
+                        <option value="UK">Angliya</option>
+                    }    
+            </div> 
+        </form>
+        <button class="btn btn-outline-danger" type="submit">Сохранить</button>
+    </div>
+</div>
+ 

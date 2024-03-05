@@ -1,0 +1,32 @@
+@model Movie
+
+
+<div class="row">
+    <div class="col-8">
+        <form asp-controller="Movie" asp-action="Store">
+            <div class="mb-3">
+                <label for="Name" class="form-label">Kino nomi:</label>
+                <input type="text" name="Name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="Year" class="form-label">Nechinchi yil:</label>
+                <input type="year" name="Year" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="Country">Davlat:</label>
+                <select name="Country" id="Country" class="form-select">
+                    <option value="Uzbek">O'zbekiston</option>
+                    <option selected value="USA">AQSH</option>
+                    <option value="Rassia">Rossiya</option>
+                    <option value="UK">Angliya</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-outline-danger">Добавить</button>
+        </form>
+    </div>
+  
+</div>
+
+   
+
+   

@@ -1,0 +1,44 @@
+@model List<Movie> 
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Year</th>
+        <th>Country</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    @foreach(var film in Model)
+    {
+    <tr>
+        <td>@film.Id</td>
+        <td>@film.Name</td>
+        <td>@film.Year</td>
+        <td>@film.Country</td>
+        <td><a asp-controller="Movie" asp-action="Edit" asp-route-id="@film.Id">Изминеть</a></td>
+        <td><a asp-controller="Movie" asp-action="Delete" asp-route-id="@film.Id">Удалить</a></td>
+    </tr>
+    }
+   
+</table>
+
+<a asp-controller="Movie" asp-action="Create"><button class="btn btn-outline-primary">Create film</button></a>
+<br>
+
+<table class="table text-center">
+    <tr>
+        <th colspan="2">1</th>
+        <th rowspan="6">3</th>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+</table>

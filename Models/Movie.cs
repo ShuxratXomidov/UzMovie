@@ -1,5 +1,4 @@
-namespace UzMovie.Models;
-public class UzMovie
+public class Movie
 {
    public int Id { get ; set; }
    public string Name { get ; set; }
